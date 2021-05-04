@@ -29,7 +29,7 @@ public class LogoutTest extends BasicTestSetup {
         steps.loginSite();
         steps.openLoginMenu();
         steps.logout();
-        steps.check();
+        steps.check(); 
     }
 
 
