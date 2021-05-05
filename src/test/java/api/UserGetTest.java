@@ -21,13 +21,11 @@ public class UserGetTest {
     public void verifyNotExistingUserReturn404(){
         new ApiEndpoints().
                 getUserById(1000).
-                then().log().body().statusCode(404);
+                then().log().body().statusCode(404);  
     }
 
     @Test
     public void verifyExistingUserReturn200(){
         new ApiEndpoints().getUserById(1).then().log().body().statusCode(400).assertThat().body(Matchers.notNullValue());
     }
-
-
 }
