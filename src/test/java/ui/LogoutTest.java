@@ -31,7 +31,4 @@ public class LogoutTest extends BasicTestSetup {
         steps.logout();
         steps.check(); 
     }
-
-
-
 }
