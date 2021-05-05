@@ -26,7 +26,7 @@ public class UserGetTest {
 
     @Test
     public void verifyExistingUserReturn200(){
-        new ApiEndpoints().getUserById(1).then().log().body().statusCode(200).assertThat().body(Matchers.notNullValue());
+        new ApiEndpoints().getUserById(1).then().log().body().statusCode(400).assertThat().body(Matchers.notNullValue());
     }
 
 
