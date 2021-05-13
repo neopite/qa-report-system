@@ -21,7 +21,7 @@ public class UserGetTest {
     public void verifyNotExistingUserReturn404(){
         new ApiEndpoints().
                 getUserById(1000).
-                then().log().body().statusCode(404);  
+                then().log().body().statusCode(404);
     }
 
     @Test
