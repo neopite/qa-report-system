@@ -24,7 +24,7 @@ public class LoginTest {
         Login login = new Login();
         login.setEmail("NotExisted@gmail.com");
         login.setPassword("123456");
-        new ApiEndpoints().loginUser(login).then().statusCode(400);
+        new ApiEndpoints().loginUser(login).then().statusCode(400);  //fef
     }
 
     @Test
